@@ -6,27 +6,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- giant psychedelic drooling face -->
+  <!-- background visuals (no hue-spin) -->
   <div class="bg-drool" aria-hidden="true">🤤</div>
-
-  <!-- floating emoji swarm (no filter) -->
   <div class="emoji-swarm" aria-hidden="true"></div>
 
-  <!-- trippy UI (hue-spin) -->
+  <!-- UI that hue-spins -->
   <main class="trippy">
-    <!-- super-trippy rainbow title -->
     <h1 class="trippy-title">Mini Blob Runner</h1>
     <p id="score">Score: 0 | Best: 0</p>
   </main>
 
-  <!-- game canvas (true colours) -->
-  <div id="game-wrapper">
-    <canvas id="game" width="800" height="250"></canvas>
+  <!-- game canvas (true colours; outside hue-spin) -->
+  <canvas id="game" width="800" height="250"></canvas>
 
-    <div id="game-over" hidden>
-      <h2>Game Over!</h2>
-      <button id="restart-btn">Play Again</button>
-    </div>
+  <!-- full-screen game-over overlay (fixed) -->
+  <div id="game-over" hidden>
+    <h2>Game Over!</h2>
+    <button id="restart-btn">Play Again</button>
   </div>
 
   <script src="game.js"></script>
