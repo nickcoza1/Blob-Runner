@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mini Blob Runner</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- background visuals (no hue-spin) -->
-  <div class="bg-drool" aria-hidden="true">🤤</div>
-  <div class="emoji-swarm" aria-hidden="true"></div>
+  <div id="floating-emojis" aria-hidden="true"></div>
 
-  <!-- UI that hue-spins -->
   <main class="trippy">
     <h1 class="trippy-title">Mini Blob Runner</h1>
     <p id="score">Score: 0 | Best: 0</p>
   </main>
 
-  <!-- game canvas (true colours; outside hue-spin) -->
   <canvas id="game" width="800" height="250"></canvas>
 
-  <!-- full-screen game-over overlay (fixed) -->
-  <div id="game-over" hidden>
+  <div id="game-over">
     <h2>Game Over!</h2>
     <button id="restart-btn">Play Again</button>
   </div>
